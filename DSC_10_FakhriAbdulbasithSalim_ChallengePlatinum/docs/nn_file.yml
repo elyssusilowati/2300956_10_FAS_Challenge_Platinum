@@ -1,0 +1,18 @@
+tags:
+  - name: Sentiment Analysis using MLP
+get:
+  description: File yang akan diproses
+consumes:
+  - multipart/form-data
+parameters:
+  - name: upload_file
+    in: formData
+    required: required
+    type: file
+responses:
+    '200':
+      description: Successful Response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error
